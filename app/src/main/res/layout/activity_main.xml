@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="mainActivity"
+        android:text="MainActivity"
         android:textSize="20sp"/>
 
     <Button
@@ -23,10 +23,12 @@
 
 
     <EditText
+        android:id="@+id/messageEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="message write"/>
     <Button
+        android:id="@+id/sendMessageBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="message send Btn"/>
