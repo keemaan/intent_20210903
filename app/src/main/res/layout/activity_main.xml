@@ -45,6 +45,7 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/nicknameTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="lux keeman"
@@ -54,6 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
         <Button
+            android:id="@+id/editNicknameBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nick Name edtBtn"/>
