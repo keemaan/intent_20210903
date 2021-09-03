@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         sendMessageBtn.setOnClickListener {
             val inputContent = messageEdt.text.toString()
             val myIntent = Intent(this,ViewMessageActivity::class.java)
+            myIntent.putExtra("inputMessage", inputContent)
             startActivity(myIntent)
 
         }
