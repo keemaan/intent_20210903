@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
             val inputContent = messageEdt.text.toString()
             val myIntent = Intent(this,ViewMessageActivity::class.java)
             myIntent.putExtra("inputMessage", inputContent)
+            myIntent.putExtra("number",2021)
             startActivity(myIntent)
 
         }

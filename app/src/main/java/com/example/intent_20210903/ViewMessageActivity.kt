@@ -10,7 +10,9 @@ class ViewMessageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_view_message)
 
         val receivedMessage = intent.getStringExtra("inputMessage")
+        val num = intent.getIntExtra("number",0)
 
         messageTxt.text = receivedMessage
+        numberTxt.text = num.toString()
     }
 }
