@@ -18,9 +18,10 @@
         android:text="other activity"/>
 
     <Button
+        android:id="@+id/returnToMainBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="least activity"/>
 
 
 </LinearLayout>
