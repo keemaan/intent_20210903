@@ -15,12 +15,14 @@
         android:text="NickName Input"/>
 
     <EditText
+        android:id="@+id/nicknameEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="New Nickname"
         android:singleLine="true"/>
 
     <Button
+        android:id="@+id/okBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="OK"/>
