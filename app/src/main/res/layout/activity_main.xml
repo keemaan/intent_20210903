@@ -22,5 +22,13 @@
         android:text="Move to otherActive"/>
 
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="message write"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="message send Btn"/>
 
 </LinearLayout>
