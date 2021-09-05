@@ -53,7 +53,6 @@ class MainActivity : AppCompatActivity() {
                 val newNicknamek = data?.getStringExtra("newNickname")
                 nicknameTxt.text = newNicknamek
             }
-
         }
 
 
