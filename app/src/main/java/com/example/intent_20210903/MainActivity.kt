@@ -15,6 +15,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        smsBtn.setOnClickListener {
+            val inputPhoneNum = phoneNumEdt.text.toString()
+            val myUri = Uri.parse("smsto:${inputPhoneNum}")
+            val myIntent = Intent( Intent.ACTION_SENDTO, myUri )
+            myIntent.putExtra("sms_body", "미리적어줄내용")
+            startActivity(myIntent)
+        }
+
         callBtn.setOnClickListener {
 //  문법상 에러가 없어도 앱이 죽음.
 //  권한 획득해야 정상 동작.
