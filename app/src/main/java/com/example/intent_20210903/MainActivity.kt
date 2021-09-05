@@ -15,6 +15,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        callBtn.setOnClickListener {
+//  문법상 에러가 없어도 앱이 죽음.
+//  권한 획득해야 정상 동작.
+            val inputPhoneNum = phoneNumEdt.text.toString()
+            val myUri = Uri.parse("tel:${inputPhoneNum}")
+            val myIntent = Intent( Intent.ACTION_CALL, myUri )
+            startActivity(myIntent)
+        }
+
 //        전화걸기(DIAL) Intent 활용예시
         dialBtn.setOnClickListener {
             val inputPhoneNum = phoneNumEdt.text.toString()
@@ -22,7 +31,6 @@ class MainActivity : AppCompatActivity() {
             val myUri = Uri.parse("tel:${inputPhoneNum}")
             val myIntent = Intent( Intent.ACTION_DIAL, myUri )
             startActivity(myIntent)
-
         }
 
 
